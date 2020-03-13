@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tuition Reimbursement</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Complete your tuition reimbursement form here.</h2>
+        <form class="form-horizontal" method="POST" id="completeForm" action="/TuitionReimbursement/completeform">
+            <table id="formTable" class="table">
+                <tr>
+                    <td>
+                        <label class="control-label col-md-auto" for="eid">Employee ID Number:</label>
+                        <input type="text" class="form-control" id="eid" placeholder="Employee ID Number" name="eid">
+                    </td>
+                    <td>
+                        <label class="control-label col-md-auto" for="date">Event Start Date:</label>
+                        <input type="date" class="form-control" id="date" placeholder="Enter password" name="date">
+                    </td>
+                    <td>
+                        <label class="control-label col-md-auto" for="time">Event Start Time:</label>
+                        <input type="time" class="form-control" id="time" placeholder="Enter start time" name="time">
+                    </td>
+                    <td>
+                        <label class="control-label col-md-auto" for="location">Event Location:</label>
+                        <input type="text" class="form-control" id="location" placeholder="Enter location" name="location">
+                    </td>
+                    <td>
+                        <label class="control-label col-md-auto" for="cost">Event Cost:</label>
+                        <input type="text" class="form-control" id="cost" placeholder="Enter cost" name="cost">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="control-label col-md-auto" for="description">Event Description:</label>
+                        <input type="text" class="form-control" id="description" placeholder="Enter description" name="description">
+                    </td>
+                    <td>
+                        <label class="control-label col-md-auto" for="format">Event Grading Format:</label>
+                        <input type="text" class="form-control" id="format" placeholder="Enter format" name="format">
+                    </td>
+                    <td>
+                        <label class="control-label col-md-auto" for="type">Event Type:</label>
+                        <input type="text" class="form-control" id="type" placeholder="Enter type" name="type">
+                    </td>
+                    <td>
+                        <label class="control-label col-md-auto" for="justification">Event Justification:</label>
+                        <input type="text" class="form-control" id="justification" placeholder="Enter justification" name="justification">
+                    </td>
+                    <td>
+                    	<input type="submit" id="submitForm" value="Submit" class="btn float-right">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>
